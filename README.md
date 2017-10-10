@@ -1,5 +1,4 @@
 # Funding Hub
----
 
 ## Contracts
 
