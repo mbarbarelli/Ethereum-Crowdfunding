@@ -1,4 +1,6 @@
-# Funding Hub
+# Ethereum Crowdfunding
+
+A decentralised crowdfunding blockchain application.
 
 ## Contracts
 
