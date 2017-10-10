@@ -1,6 +1,6 @@
 # Ethereum Crowdfunding
 
-A decentralised crowdfunding blockchain application.
+A decentralized crowdfunding blockchain application.
 
 ## Contracts
 
