@@ -4,7 +4,7 @@
 
 ### Project created during funding hub deployment. (As per `2_deploy_contracts.js`)
 
-1.png
+![Project Creation](/images/1.png)
 
 ###  Createing a new project
 2.png
