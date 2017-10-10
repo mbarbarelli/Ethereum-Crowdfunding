@@ -1,23 +1,5 @@
 # Funding Hub
 ---
-##  dApp Workflow 
-
-### Project created during funding hub deployment. (As per `2_deploy_contracts.js`)
-
-![Project Creation](/images/1.png)
-
-###  Createing a new project
-2.png
-
-3.png
-
-4.png
-
-###  Funding a project 
-
-5.png
-
-6.png
 
 ## Contracts
 
@@ -60,6 +42,25 @@ Funding token implementation.  Allows deposits, withdrawals, transfers, allowanc
 #### `Math.sol` 
 
 Standard overflow and underflow protection routines. 
+
+##  dApp Workflow 
+
+### Project created during funding hub deployment. (As per `2_deploy_contracts.js`)
+
+![Project Created](/images/1.png)
+
+###  Createing a new project
+![Project Creation](/images/2.png)
+
+![Project Creation](/images/3.png)
+
+![Project Creation](/images/4.png)
+
+###  Funding a project 
+
+![Project Funding](/images/5.png)
+
+![Project Funding](/images/6.png)
 
 ## Tests
 
