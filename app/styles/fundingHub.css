@@ -1,0 +1,27 @@
+body {
+    background-color:#f7f6ef;
+}
+
+.blocks {
+    color:#f7f6ef
+}
+
+.projectCards {
+    display: none;
+}
+
+/* label focus color */
+.input-field input:focus + label {
+    color:#910002 !important;
+}
+
+.row .input-field input:focus {
+    border-bottom: 1px solid #910002 !important;
+    box-shadow: 0 1px 0 0 #910002 !important
+}
+
+.title-text {
+    font-weight: bold; 
+    padding: 0px 10px 0px 10px;
+}
+

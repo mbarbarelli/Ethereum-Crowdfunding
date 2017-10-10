@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link href="/styles/fundingHub.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/f33b7185f4.js"></script>
+    <script src="/js/app.js"></script>
+    
+    <div class="container">
+        <nav>
+            <div class="nav-wrapper grey lighten-1">
+                <a href="#!" class="brand-logo"><i class="fa fa-cubes fa-3x blocks"></i>Funding Hub</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="grey darken-1 waves-effect waves-light btn modal-trigger" href="#mdlCreateProject">Create Project</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row">
+        </div>
+        <div class="row">
+        </div>
+
+        <div id="projectLoader" data-bind="visible: projectData().length == 0">
+            <div class="row">
+                Loading projects...
+                <div class="progress red lighten-5">
+                    <div class="indeterminate red darken-4"></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display:none;" data-bind="visible: projectData().length > 0">
+
+            <div data-bind="foreach: projectData">
+                <div class="row">
+                </div>
+                <div class="row">
+                    <div class="card horizontal">
+                        <div class="card-stacked">
+                            <div class="card-title">
+                                <span class="title-text">Project:</span><span data-bind="text: address"></span>
+                            </div>
+                            <div class="card-content">
+
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="title-text">Beneficiary:</td>
+                                            <td data-bind="text: beneficiary"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title-text">Funding cap:</td>
+                                            <td data-bind="text: fundingCap"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title-text">Funding raised:</td>
+                                            <td data-bind="text: amountRaised"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title-text">Deadline:</td>
+                                            <td data-bind="text: deadline"></td>
+                                        </tr>                                        
+                                        <tr>
+                                            <td class="title-text">Funding stage:</td>
+                                            <td data-bind="text: fundingStageLookup"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title-text">Project status:</td>
+                                            <td data-bind="text: statusLookup"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="card-action">
+                                <a class="btn-floating red darken-4 darken-1 waves-effect waves-light btn modal-trigger" 
+                                   href="#mdlContribute" data-bind="click: $root.setCurrentProjectAddress">
+                                    <i class="material-icons">money</i>
+                                </a>
+                                <span>Contribute to project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Create Project Modal -->
+    <div id="mdlCreateProject" class="modal">
+        <div class="modal-content">
+            <h4>Create Project</h4>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="funding_cap" type="text" data-bind="value: fundingCap">
+                    <label for="funding_cap">Funding cap</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="deadline" type="text" data-bind="value: deadline">
+                    <label for="deadline">Deadline in seconds</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col m8">
+                    <select data-bind="materializeSelect: { options: accounts },
+                        options: accounts,
+                        optionsText: $data,
+                        value: projectCreator">
+                    </select>
+                    <label>Project creator</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <a class="waves-effect waves-light grey btn" data-bind="click: createProject">Create</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-red darken-4 btn-flat">cancel</a>
+        </div>
+    </div>
+
+    <!-- Project Contribution Modal -->
+    <div id="mdlContribute" class="modal">
+        <div class="modal-content">
+            <h4>Contribute to project</h4>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="contribution_amt" type="text" data-bind="value: contributionAmount">
+                    <label for="contribution_amt">Amount to contribute</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <select data-bind="materializeSelect: { options: accounts },
+                        options: accounts,
+                        optionsText: $data,
+                        value: contributor">
+                    </select>
+                    <label>Contributor</label>
+                </div>
+            </div>            
+        </div>
+        <div class="modal-footer">
+            <a class="waves-effect waves-light grey btn" data-bind="click: $root.projectContribute">Contribute</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-red darken-4 btn-flat">cancel</a>
+        </div>
+    </div>    
+</body>
+
+</html>

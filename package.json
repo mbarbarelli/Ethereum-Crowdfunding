@@ -1,0 +1,25 @@
+{
+  "name": "funding-hub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "bootstrap": "~3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "knockout": "~3.4.2",
+    "truffle-contract": "^2.0.1",
+    "web3": "^0.19.0"
+  },
+  "devDependencies": {
+    "ethereumjs-testrpc": "3.0.5",
+    "mocha": "^3.4.2",
+    "truffle": "^3.2.5"
+  },
+  "author": "",
+  "license": "ISC"
+}

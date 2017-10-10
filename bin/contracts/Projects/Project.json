@@ -1,0 +1,21 @@
+{
+    "abi": "[{\"constant\":true,\"inputs\":[],\"name\":\"projectStatus\",\"outputs\":[{\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"beneficiary\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"refund\",\"outputs\":[],\"payable\":false,\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"payout\",\"outputs\":[],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"fundingToken\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"amountRaised\",\"outputs\":[{\"name\":\"amount\",\"type\":\"uint256\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"fundingStage\",\"outputs\":[{\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"fundingCap\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_funding\",\"type\":\"uint256\"},{\"name\":\"investor\",\"type\":\"address\"}],\"name\":\"fund\",\"outputs\":[],\"payable\":false,\"type\":\"function\"},{\"inputs\":[{\"name\":\"_creator\",\"type\":\"address\"},{\"name\":\"_fundingCap\",\"type\":\"uint256\"},{\"name\":\"_deadline\",\"type\":\"uint256\"}],\"payable\":false,\"type\":\"constructor\"},{\"payable\":false,\"type\":\"fallback\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"contributor\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"LogProjectContributed\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"time\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"funding\",\"type\":\"uint256\"}],\"name\":\"LogFundingCapReached\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"contributor\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"project\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"LogRefund\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"beneficiary\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"payout\",\"type\":\"uint256\"}],\"name\":\"LogPayout\",\"type\":\"event\"}]",
+    "bytecode": "",
+    "functionHashes": {
+        "amountRaised()": "7b3e5e7b",
+        "beneficiary()": "38af3eed",
+        "fund(uint256,address)": "eee92395",
+        "fundingCap()": "e3b2594f",
+        "fundingStage()": "cd571804",
+        "fundingToken()": "78065f27",
+        "payout()": "63bd1d4a",
+        "projectStatus()": "1ab33308",
+        "refund()": "590e1ae3"
+    },
+    "gasEstimates": {
+        "creation": {},
+        "external": {},
+        "internal": {}
+    },
+    "runtimeBytecode": ""
+}

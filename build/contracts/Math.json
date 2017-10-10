@@ -1,0 +1,292 @@
+{
+  "contract_name": "Math",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "safeToMul",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "uint256"
+        },
+        {
+          "name": "b",
+          "type": "uint256"
+        }
+      ],
+      "name": "safeToAdd",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "uint256"
+        },
+        {
+          "name": "b",
+          "type": "uint256"
+        }
+      ],
+      "name": "add",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "safeToSub",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "add",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "sub",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "uint256"
+        },
+        {
+          "name": "b",
+          "type": "uint256"
+        }
+      ],
+      "name": "sub",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "mul",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "uint256"
+        },
+        {
+          "name": "b",
+          "type": "uint256"
+        }
+      ],
+      "name": "mul",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "uint256"
+        },
+        {
+          "name": "b",
+          "type": "uint256"
+        }
+      ],
+      "name": "safeToMul",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "safeToAdd",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "uint256"
+        },
+        {
+          "name": "b",
+          "type": "uint256"
+        }
+      ],
+      "name": "safeToSub",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b5b6103f78061001c6000396000f3006060604052361561009e5763ffffffff60e060020a6000350416631f47ba2981146100a05780634e30a66c146100c2578063771602f7146100e45780639030434114610104578063a5f3c23b14610126578063adefc37b14610146578063b67d77c514610166578063bbe93d9114610186578063c8a4ac9c146101a6578063cb10fa76146101c6578063dc08a80b146101e8578063e31c71c41461020a575bfe5b6100ae60043560243561022c565b604080519115158252519081900360200190f35b6100ae600435602435610250565b604080519115158252519081900360200190f35b6100f260043560243561025e565b60408051918252519081900360200190f35b6100ae600435602435610281565b604080519115158252519081900360200190f35b6100f26004356024356102b7565b60408051918252519081900360200190f35b6100f26004356024356102da565b60408051918252519081900360200190f35b6100f26004356024356102fd565b60408051918252519081900360200190f35b6100f2600435602435610320565b60408051918252519081900360200190f35b6100f2600435602435610343565b60408051918252519081900360200190f35b6100ae600435602435610366565b604080519115158252519081900360200190f35b6100ae60043560243561038a565b604080519115158252519081900360200190f35b6100ae6004356024356103c0565b604080519115158252519081900360200190f35b60008115806102475750828283850281151561024457fe5b05145b90505b92915050565b808201829010155b92915050565b600061026a8383610250565b15156102765760006000fd5b508181015b92915050565b60006000821215801561029657508282840313155b806102475750600082128015610247575082828403135b5b90505b92915050565b600061026a838361038a565b15156102765760006000fd5b508181015b92915050565b60006102e68383610281565b15156102f25760006000fd5b508082035b92915050565b60006102e683836103c0565b15156102f25760006000fd5b508082035b92915050565b600061032c838361022c565b15156103385760006000fd5b508181025b92915050565b600061032c8383610366565b15156103385760006000fd5b508181025b92915050565b60008115806102475750828283850281151561037e57fe5b04145b90505b92915050565b60006000821215801561039f57508282840112155b806102475750600082128015610247575082828401125b5b90505b92915050565b808210155b929150505600a165627a7a72305820db27578137bc9932d378a9b125fa37117f3ee11d91eb33bab0c3e7fec97968d80029",
+  "networks": {
+    "1503910188587": {
+      "events": {},
+      "links": {},
+      "address": "0x1e8dcf1e4964eb93fa31f3258d00507825dd6a74",
+      "updated_at": 1503922127114
+    },
+    "1503922244491": {
+      "events": {},
+      "links": {},
+      "address": "0x4f7a429d57048829da3146fa2401808e23e4a3ee",
+      "updated_at": 1503922253343
+    },
+    "1503948182109": {
+      "events": {},
+      "links": {},
+      "address": "0x55eb915627b80592ed935fa0212a23e49b35643f",
+      "updated_at": 1503948237608
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1503948237608
+}
